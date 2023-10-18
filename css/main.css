@@ -1,0 +1,51 @@
+
+.dice #dot{
+    transform-origin: 50px 50px;
+}
+.dice circle{
+    fill: #f57c00;
+    transition: all .5s;
+    transform-origin: 50px 50px ;
+}
+
+.dice:hover circle{
+    transform: scale(1.2);
+}
+
+.dice5 g{
+    transition: transform .3s
+}
+
+.dice5:hover g{
+    transform-origin: center;
+    transform: scale(1.1);
+}
+#text{
+    font-size:2.5rem;
+}
+.cats-text{
+    font-size: 10rem;
+}
+
+
+@keyframes move{
+    0%, 100%{
+ transform: translateX(0)
+    }
+
+    50%{
+   transform: translateX(10px)
+    }
+}
+
+.pupil{
+    animation: move 1s infinite;
+}
+
+.pupil:hover{
+    animation-play-state: paused;
+}
+
+#smily:hover .pupil{
+    animation-play-state: paused;
+}
